@@ -13,7 +13,7 @@ def about():
 
 @app.route("/healthcheck")
 def healthcheck():
-    return jsonify({"status": "OK"})
+    return jsonify({"status": "Okay"})
 
 if __name__ == "__main__":
     app.run(debug=True)
