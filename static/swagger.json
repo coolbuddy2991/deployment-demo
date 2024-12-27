@@ -1,0 +1,25 @@
+openapi: 3.0.3
+info:
+  title: Demo App
+  version: 0.0.0
+  description: This app is created as a demo for swagger and will be hostedon EC2
+paths:
+  /health:
+    summary: Checks the health status of the app
+    get:
+      summary: This is a simple hello world example
+      description: >-
+        This is just a demo of the capabilities of swagger and Flask. It can be
+        extended to as many use cases as intended
+      operationId: demo-app-hello-world
+      responses:
+        default:
+          description: Default error sample response
+          content:
+            application/json:
+              examples:
+                Success:
+                  value: |
+                    {
+                     "status": "AllGood"
+                    }
